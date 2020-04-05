@@ -375,7 +375,7 @@ public class MainActivity extends YouTubeBaseActivity implements YouTubePlayer.O
     @Override
     public void passvideoURL(String url) {
         Log.d("passvideoURL", url);
-        if (mPlayer != null && mPlayer.isPlaying()){
+        if (mPlayer != null){
             mPlayer.pause();
             mPlayer.loadVideo(url);
         }
